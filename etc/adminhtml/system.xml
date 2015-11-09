@@ -71,6 +71,109 @@
                     <comment><![CDATA[Paste it from the Twitter <a href='https://twitter.com/settings/widgets/new'>Widgets Configurator</a>]]>.</comment>
                     <depends><field id='enable'>1</field></depends>
                 </field>
+                <field
+                    id='limit'
+                    translate='label'
+                    type='text'
+                    sortOrder='3'
+                    showInDefault='1'
+                    showInWebsite='1'
+                    showInStore='1'
+                >
+                    <label>Number of Tweets to Show</label>
+                    <comment><![CDATA[Leave empty for an automatic value.
+<br/>Set from 1 to 20 to display the specific number of items.
+<br/>The timeline will automatically adjust its height to fit the specified number of Tweets.
+<br/>The timeline is fixed after display; it will not poll for new Tweets.]]></comment>
+                    <validate>validate-number validate-greater-than-zero</validate>
+                    <depends><field id='enable'>1</field></depends>
+                </field>
+                <!-- https://dev.twitter.com/web/embedded-timelines#dimensions -->
+                <field
+                    id='height'
+                    translate='label'
+                    type='text'
+                    sortOrder='4'
+                    showInDefault='1'
+                    showInWebsite='1'
+                    showInStore='1'
+                >
+                    <label>Height</label>
+                    <comment><![CDATA[In pixels.
+<br/>Leave empty if yes have set the «Number of Tweets to Show»: the height will be adjusted automatically.]]></comment>
+                    <validate>validate-number validate-greater-than-zero</validate>
+                    <depends><field id='enable'>1</field></depends>
+                </field>
+                <field
+                    id='scrollbar'
+                    translate='label'
+                    type='select'
+                    sortOrder='5'
+                    showInDefault='1'
+                    showInWebsite='1'
+                    showInStore='1'
+                >
+                    <label>Show Vertical Scrollbar?</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[]]></comment>
+                    <depends><field id='enable'>1</field></depends>
+                </field>
+                <field
+                    id='borders'
+                    translate='label'
+                    type='select'
+                    sortOrder='6'
+                    showInDefault='1'
+                    showInWebsite='1'
+                    showInStore='1'
+                >
+                    <label>Show Borders?</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[Setting this to «No» removes all borders within the widget including borders surrounding the widget area and separating Tweets.]]></comment>
+                    <depends><field id='enable'>1</field></depends>
+                </field>
+                <field
+                    id='header'
+                    translate='label'
+                    type='select'
+                    sortOrder='7'
+                    showInDefault='1'
+                    showInWebsite='1'
+                    showInStore='1'
+                >
+                    <label>Show Header?</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[Setting this to «No» hides the timeline header.]]></comment>
+                    <depends><field id='enable'>1</field></depends>
+                </field>
+                <field
+                    id='footer'
+                    translate='label'
+                    type='select'
+                    sortOrder='8'
+                    showInDefault='1'
+                    showInWebsite='1'
+                    showInStore='1'
+                >
+                    <label>Show Footer?</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[Setting this to «No» hides the timeline footer and Tweet composer link, if included in the timeline widget type.]]></comment>
+                    <depends><field id='enable'>1</field></depends>
+                </field>
+                <field
+                    id='transparent'
+                    translate='label'
+                    type='select'
+                    sortOrder='9'
+                    showInDefault='1'
+                    showInWebsite='1'
+                    showInStore='1'
+                >
+                    <label>Transparent?</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[Setting this to «Yes» removes the widget’s background color.]]></comment>
+                    <depends><field id='enable'>1</field></depends>
+                </field>
             </group>
         </section>
     </system>

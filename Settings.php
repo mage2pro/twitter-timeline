@@ -2,7 +2,13 @@
 namespace Dfe\TwitterTimeline;
 class Settings extends \Df\Core\Settings {
 	/** @return string */
-	public function html() {return $this->p('html');}
+	public function html() {return $this->v('html');}
+
+	/** @return int */
+	public function limit() {return $this->i('limit');}
+
+	/** @return bool */
+	public function transparent() {return $this->b('transparent');}
 
 	/**
 	 * @override

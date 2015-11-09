@@ -1,0 +1,16 @@
+<?xml version='1.0'?>
+<config
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='urn:magento:module:Magento_Store:etc/config.xsd'
+>
+    <default>
+        <dfe_twitter>
+            <timeline>
+                <borders>1</borders>
+                <footer>1</footer>
+                <header>1</header>
+                <scrollbar>1</scrollbar>
+            </timeline>
+        </dfe_twitter>
+    </default>
+</config>
