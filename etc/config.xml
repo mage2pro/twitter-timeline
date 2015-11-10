@@ -6,7 +6,6 @@
     <default>
         <dfe_twitter>
             <timeline>
-                <borders>1</borders>
                 <footer>1</footer>
                 <header>1</header>
                 <scrollbar>1</scrollbar>
