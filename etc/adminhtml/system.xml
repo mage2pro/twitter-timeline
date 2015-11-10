@@ -68,7 +68,7 @@
                     showInStore='1'
                 >
                     <label>Widget HTML Code</label>
-                    <comment><![CDATA[Paste it from the Twitter <a href='https://twitter.com/settings/widgets/new'>Widgets Configurator</a>]]>.</comment>
+                    <comment><![CDATA[Paste it from the Twitter <a href='https://twitter.com/settings/widgets/new'>Widgets Configurator</a>.]]></comment>
                     <depends><field id='enable'>1</field></depends>
                 </field>
                 <field
