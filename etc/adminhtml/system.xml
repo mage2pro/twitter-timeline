@@ -22,7 +22,7 @@
             id='dfe_twitter'
             translate='label'
             type='text'
-            sortOrder='200'
+            sortOrder='205'
             showInDefault='1'
             showInWebsite='1'
             showInStore='1'
