@@ -42,14 +42,14 @@
                 <field
                     id='enable'
                     translate='label'
-                    type='select'
+                    type='Df\Framework\Data\Form\Element\Checkbox'
                     sortOrder='1'
                     showInDefault='1'
                     showInWebsite='1'
                     showInStore='1'
                 >
                     <label>Enable?</label>
-                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <backend_model>Df\Config\Backend\Checkbox</backend_model>
                     <comment><![CDATA[]]></comment>
                 </field>
                 <field
@@ -101,70 +101,70 @@
                 <field
                     id='scrollbar'
                     translate='label'
-                    type='select'
+                    type='Df\Framework\Data\Form\Element\Checkbox'
                     sortOrder='5'
                     showInDefault='1'
                     showInWebsite='1'
                     showInStore='1'
                 >
                     <label>Show Vertical Scrollbar?</label>
-                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+					<backend_model>Df\Config\Backend\Checkbox</backend_model>
                     <comment><![CDATA[]]></comment>
                     <depends><field id='enable'>1</field></depends>
                 </field>
                 <field
                     id='borders'
                     translate='label'
-                    type='select'
+                    type='Df\Framework\Data\Form\Element\Checkbox'
                     sortOrder='6'
                     showInDefault='1'
                     showInWebsite='1'
                     showInStore='1'
                 >
                     <label>Show Borders?</label>
-                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+					<backend_model>Df\Config\Backend\Checkbox</backend_model>
                     <comment><![CDATA[Setting this to «No» removes all borders within the widget including borders surrounding the widget area and separating Tweets.]]></comment>
                     <depends><field id='enable'>1</field></depends>
                 </field>
                 <field
                     id='header'
                     translate='label'
-                    type='select'
+                    type='Df\Framework\Data\Form\Element\Checkbox'
                     sortOrder='7'
                     showInDefault='1'
                     showInWebsite='1'
                     showInStore='1'
                 >
                     <label>Show Header?</label>
-                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+					<backend_model>Df\Config\Backend\Checkbox</backend_model>
                     <comment><![CDATA[Setting this to «No» hides the timeline header.]]></comment>
                     <depends><field id='enable'>1</field></depends>
                 </field>
                 <field
                     id='footer'
                     translate='label'
-                    type='select'
+                    type='Df\Framework\Data\Form\Element\Checkbox'
                     sortOrder='8'
                     showInDefault='1'
                     showInWebsite='1'
                     showInStore='1'
                 >
                     <label>Show Footer?</label>
-                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+					<backend_model>Df\Config\Backend\Checkbox</backend_model>
                     <comment><![CDATA[Setting this to «No» hides the timeline footer and Tweet composer link, if included in the timeline widget type.]]></comment>
                     <depends><field id='enable'>1</field></depends>
                 </field>
                 <field
                     id='transparent'
                     translate='label'
-                    type='select'
+                    type='Df\Framework\Data\Form\Element\Checkbox'
                     sortOrder='9'
                     showInDefault='1'
                     showInWebsite='1'
                     showInStore='1'
                 >
                     <label>Transparent?</label>
-                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+					<backend_model>Df\Config\Backend\Checkbox</backend_model>
                     <comment><![CDATA[Setting this to «Yes» removes the widget’s background color.]]></comment>
                     <depends><field id='enable'>1</field></depends>
                 </field>
