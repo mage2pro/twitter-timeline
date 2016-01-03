@@ -17,6 +17,6 @@ class Settings extends \Df\Core\Settings {
 	 */
 	protected function prefix() {return 'dfe_twitter/timeline/';}
 
-	/** @return \Dfe\TwitterTimeline\Settings */
+	/** @return $this */
 	public static function s() {static $r; return $r ? $r : $r = df_o(__CLASS__);}
 }
