@@ -1,7 +1,7 @@
 <?xml version='1.0'?>
 <config
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd"
+    xsi:noNamespaceSchemaLocation="urn:magento:module:Df_Config:etc/system_file.xsd"
 >
     <system>
         <!--
@@ -68,7 +68,9 @@
                 <field
                     id='limit'
                     translate='label'
-                    type='text'
+                    type='Df\Framework\Data\Form\Element\Select\Integer'
+					dfMax='20'
+					dfMin='1'
                     sortOrder='3'
                     showInDefault='1'
                     showInWebsite='1'
