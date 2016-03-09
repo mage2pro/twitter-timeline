@@ -52,7 +52,7 @@
                     id='html'
                     translate='label'
                     type='Df\Framework\Data\Form\Element\Textarea'
-                    dfRows='6'
+                    dfRows='7'
                     sortOrder='2'
                     showInDefault='1'
                     showInWebsite='1'
