@@ -43,11 +43,16 @@
                     <backend_model>Df\Config\Backend\Checkbox</backend_model>
                     <comment><![CDATA[]]></comment>
                 </field>
+<!--
+	2016-03-09
+	https://code.dmitry-fedyuk.com/m2/all/blob/34f8c108/Framework/Data/Form/Element/Textarea.php#L39
+	https://code.dmitry-fedyuk.com/m2/all/blob/34f8c108/Config/etc/system_file.xsd#L102
+-->
                 <field
                     id='html'
                     translate='label'
-                    type='textarea'
-                    dfRows='5'
+                    type='Df\Framework\Data\Form\Element\Textarea'
+                    dfRows='6'
                     sortOrder='2'
                     showInDefault='1'
                     showInWebsite='1'
