@@ -47,6 +47,7 @@
                     id='html'
                     translate='label'
                     type='textarea'
+                    dfRows='5'
                     sortOrder='2'
                     showInDefault='1'
                     showInWebsite='1'
