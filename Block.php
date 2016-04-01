@@ -1,10 +1,11 @@
 <?php
 namespace Dfe\TwitterTimeline;
-class Block extends \Magento\Framework\View\Element\AbstractBlock {
+use Magento\Framework\View\Element\AbstractBlock;
+class Block extends AbstractBlock {
 	/**
 	 * 2015-11-09
 	 * @override
-	 * @see \Magento\Backend\Block\AbstractBlock::_toHtml()
+	 * @see AbstractBlock::_toHtml()
 	 * @return string
 	 */
 	protected function _toHtml() {
