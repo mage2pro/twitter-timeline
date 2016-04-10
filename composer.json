@@ -1,5 +1,6 @@
 {
 	"name": "mage2pro/twitter-timeline"
+	,"version": "1.0.0"
 	,"description": "The «Twitter Timeline» extension."
 	,"type": "magento2-module"
 	,"homepage": "https://mage2.pro/t/174"
