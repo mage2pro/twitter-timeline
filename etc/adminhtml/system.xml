@@ -33,7 +33,7 @@
                 <field
                     id='enable'
                     translate='label'
-                    type='Df\Framework\Data\Form\Element\Checkbox'
+                    type='Df\Framework\Form\Element\Checkbox'
                     sortOrder='1'
                     showInDefault='1'
                     showInWebsite='1'
@@ -51,7 +51,7 @@
                 <field
                     id='html'
                     translate='label'
-                    type='Df\Framework\Data\Form\Element\Textarea'
+                    type='Df\Framework\Form\Element\Textarea'
                     dfRows='7'
                     sortOrder='2'
                     showInDefault='1'
@@ -65,7 +65,7 @@
                 <field
                     id='limit'
                     translate='label'
-                    type='Df\Framework\Data\Form\Element\Select\Integer'
+                    type='Df\Framework\Form\Element\Select\Integer'
 					dfMax='20'
 					dfMin='1'
                     sortOrder='3'
@@ -100,7 +100,7 @@
                 <field
                     id='scrollbar'
                     translate='label'
-                    type='Df\Framework\Data\Form\Element\Checkbox'
+                    type='Df\Framework\Form\Element\Checkbox'
                     sortOrder='5'
                     showInDefault='1'
                     showInWebsite='1'
@@ -114,7 +114,7 @@
                 <field
                     id='borders'
                     translate='label'
-                    type='Df\Framework\Data\Form\Element\Checkbox'
+                    type='Df\Framework\Form\Element\Checkbox'
                     sortOrder='6'
                     showInDefault='1'
                     showInWebsite='1'
@@ -128,7 +128,7 @@
                 <field
                     id='header'
                     translate='label'
-                    type='Df\Framework\Data\Form\Element\Checkbox'
+                    type='Df\Framework\Form\Element\Checkbox'
                     sortOrder='7'
                     showInDefault='1'
                     showInWebsite='1'
@@ -142,7 +142,7 @@
                 <field
                     id='footer'
                     translate='label'
-                    type='Df\Framework\Data\Form\Element\Checkbox'
+                    type='Df\Framework\Form\Element\Checkbox'
                     sortOrder='8'
                     showInDefault='1'
                     showInWebsite='1'
@@ -156,7 +156,7 @@
                 <field
                     id='transparent'
                     translate='label'
-                    type='Df\Framework\Data\Form\Element\Checkbox'
+                    type='Df\Framework\Form\Element\Checkbox'
                     sortOrder='9'
                     showInDefault='1'
                     showInWebsite='1'
