@@ -1,5 +1,6 @@
 <?php
 namespace Dfe\TwitterTimeline;
+/** @method static Settings s() */
 class Settings extends \Df\Core\Settings {
 	/** @return string */
 	public function html() {return $this->v('html');}
@@ -16,7 +17,4 @@ class Settings extends \Df\Core\Settings {
 	 * @return string
 	 */
 	protected function prefix() {return 'dfe_twitter/timeline/';}
-
-	/** @return self */
-	public static function s() {static $r; return $r ? $r : $r = df_o(__CLASS__);}
 }
