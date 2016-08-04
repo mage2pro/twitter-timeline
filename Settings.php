@@ -13,6 +13,7 @@ class Settings extends \Df\Core\Settings {
 
 	/**
 	 * @override
+	 * @see \Df\Core\Settings::prefix()
 	 * @used-by \Df\Core\Settings::v()
 	 * @return string
 	 */
