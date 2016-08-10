@@ -67,7 +67,7 @@
                 <field
                     id='limit'
                     translate='label'
-                    type='Df\Framework\Form\Element\Select\Integer'
+                    type='Df\Framework\Form\Element\Select\Range'
 					dfMax='20'
 					dfMin='1'
                     sortOrder='3'
