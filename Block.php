@@ -49,7 +49,7 @@ class Block extends AbstractBlock {
 			$chromeA[]= 'transparent';
 		}
 		if ($chromeA) {
-			$a->setAttribute('data-chrome', implode(' ', $chromeA));
+			$a->setAttribute('data-chrome', df_cc_s($chromeA));
 		}
 		//data-chrome="nofooter noborders"
 		/**
