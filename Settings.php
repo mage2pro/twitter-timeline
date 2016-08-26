@@ -1,7 +1,7 @@
 <?php
 namespace Dfe\TwitterTimeline;
 /** @method static Settings s() */
-class Settings extends \Df\Core\Settings {
+final class Settings extends \Df\Core\Settings {
 	/** @return string */
 	public function html() {return $this->v('html');}
 
