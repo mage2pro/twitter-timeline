@@ -1,6 +1,8 @@
 <?php
 namespace Dfe\TwitterTimeline;
 use Magento\Framework\View\Element\AbstractBlock;
+// 2015-11-09
+/** @final Unable to use the PHP «final» keyword here because of the M2 code generation. */
 class Block extends AbstractBlock {
 	/**
 	 * 2015-11-09
@@ -8,7 +10,7 @@ class Block extends AbstractBlock {
 	 * @see AbstractBlock::_toHtml()
 	 * @return string
 	 */
-	protected function _toHtml() {
+	final protected function _toHtml() {
 		/** @var string $html */
 		$html = Settings::s()->html();
 		/**
