@@ -43,7 +43,7 @@ https://mage2.pro/t/174
 				>
 					<label>Enable?</label>
 					<backend_model>Df\Config\Backend\Checkbox</backend_model>
-					<comment><![CDATA[]]></comment>
+					<comment><![CDATA[Enable the «<a href='https://mage2.pro/c/extensions/twitter-timeline' target='_blank'>Twitter Timeline</a>» extension?]]></comment>
 				</field>
 <!--
 2016-03-09
