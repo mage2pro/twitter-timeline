@@ -30,8 +30,8 @@ https://mage2.pro/t/174
 				showInStore='0'
 			>
 				<label>Timeline</label>
-				<dfExtension>Dfe\TwitterTimeline\Ext</dfExtension>
-				<frontend_model>Df\Config\Block\System\Config\Form\Fieldset\Ext</frontend_model>
+				<dfExtension>Dfe_TwitterTimeline</dfExtension>
+				<frontend_model>Df\Config\Fieldset</frontend_model>
 				<field
 					id='enable'
 					translate='label'
