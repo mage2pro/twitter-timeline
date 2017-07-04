@@ -6,10 +6,8 @@
 	<system>
 		<section
 			id='dfe_twitter'
+			showInDefault='1' showInStore='1' showInWebsite='1'
 			translate='label'
-			showInDefault='1'
-			showInWebsite='1'
-			showInStore='1'
 		>
 			<tab>_df</tab>
 			<label>Twitter</label>
@@ -21,23 +19,19 @@ https://mage2.pro/t/174
 			<resource>Dfe_Twitter::config</resource>
 			<group
 				id='timeline'
-				translate='label'
+				showInDefault='1' showInStore='0' showInWebsite='1'
 				sortOrder='1'
-				showInDefault='1'
-				showInWebsite='1'
-				showInStore='0'
+				translate='label'
 			>
 				<label>Timeline</label>
 				<dfExtension>Dfe_TwitterTimeline</dfExtension>
 				<frontend_model>Df\Config\Fieldset</frontend_model>
 				<field
 					id='enable'
+					showInDefault='1' showInStore='1' showInWebsite='1'
+					sortOrder='1'
 					translate='label'
 					type='Df\Framework\Form\Element\Checkbox'
-					sortOrder='1'
-					showInDefault='1'
-					showInWebsite='1'
-					showInStore='1'
 				>
 					<label>Enable?</label>
 					<backend_model>Df\Config\Backend\Checkbox</backend_model>
@@ -49,29 +43,25 @@ https://github.com/mage2pro/core/tree/34f8c108/Framework/Data/Form/Element/Texta
 https://github.com/mage2pro/core/tree/34f8c108/Config/etc/system_file.xsd#L102
 -->
 				<field
+					dfRows='7'
 					id='html'
+					showInDefault='1' showInStore='1' showInWebsite='1'
+					sortOrder='2'
 					translate='label'
 					type='Df\Framework\Form\Element\Textarea'
-					dfRows='7'
-					sortOrder='2'
-					showInDefault='1'
-					showInWebsite='1'
-					showInStore='1'
 				>
 					<label>Widget HTML Code</label>
 					<comment><![CDATA[Paste it from the Twitter <a href='https://twitter.com/settings/widgets/new'>Widgets Configurator</a>.]]></comment>
 					<depends><field id='enable'>1</field></depends>
 				</field>
 				<field
-					id='limit'
-					translate='label'
-					type='Df\Framework\Form\Element\Select\Range'
 					dfMax='20'
 					dfMin='1'
+					id='limit'
+					showInDefault='1' showInStore='1' showInWebsite='1'
 					sortOrder='3'
-					showInDefault='1'
-					showInWebsite='1'
-					showInStore='1'
+					translate='label'
+					type='Df\Framework\Form\Element\Select\Range'
 				>
 					<label>Number of Tweets to Show</label>
 					<comment><![CDATA[Leave empty for an automatic value.
@@ -84,12 +74,10 @@ https://github.com/mage2pro/core/tree/34f8c108/Config/etc/system_file.xsd#L102
 				<!-- https://dev.twitter.com/web/embedded-timelines#dimensions -->
 				<field
 					id='height'
+					showInDefault='1' showInStore='1' showInWebsite='1'
+					sortOrder='4'
 					translate='label'
 					type='text'
-					sortOrder='4'
-					showInDefault='1'
-					showInWebsite='1'
-					showInStore='1'
 				>
 					<label>Height</label>
 					<comment><![CDATA[In pixels.
@@ -99,12 +87,10 @@ https://github.com/mage2pro/core/tree/34f8c108/Config/etc/system_file.xsd#L102
 				</field>
 				<field
 					id='scrollbar'
+					showInDefault='1' showInStore='1' showInWebsite='1'
+					sortOrder='5'
 					translate='label'
 					type='Df\Framework\Form\Element\Checkbox'
-					sortOrder='5'
-					showInDefault='1'
-					showInWebsite='1'
-					showInStore='1'
 				>
 					<label>Show Vertical Scrollbar?</label>
 					<backend_model>Df\Config\Backend\Checkbox</backend_model>
@@ -113,12 +99,10 @@ https://github.com/mage2pro/core/tree/34f8c108/Config/etc/system_file.xsd#L102
 				</field>
 				<field
 					id='borders'
+					showInDefault='1' showInStore='1' showInWebsite='1'
+					sortOrder='6'
 					translate='label'
 					type='Df\Framework\Form\Element\Checkbox'
-					sortOrder='6'
-					showInDefault='1'
-					showInWebsite='1'
-					showInStore='1'
 				>
 					<label>Show Borders?</label>
 					<backend_model>Df\Config\Backend\Checkbox</backend_model>
@@ -127,12 +111,10 @@ https://github.com/mage2pro/core/tree/34f8c108/Config/etc/system_file.xsd#L102
 				</field>
 				<field
 					id='header'
+					showInDefault='1' showInStore='1' showInWebsite='1'
+					sortOrder='7'
 					translate='label'
 					type='Df\Framework\Form\Element\Checkbox'
-					sortOrder='7'
-					showInDefault='1'
-					showInWebsite='1'
-					showInStore='1'
 				>
 					<label>Show Header?</label>
 					<backend_model>Df\Config\Backend\Checkbox</backend_model>
@@ -141,12 +123,10 @@ https://github.com/mage2pro/core/tree/34f8c108/Config/etc/system_file.xsd#L102
 				</field>
 				<field
 					id='footer'
+					showInDefault='1' showInStore='1' showInWebsite='1'
+					sortOrder='8'
 					translate='label'
 					type='Df\Framework\Form\Element\Checkbox'
-					sortOrder='8'
-					showInDefault='1'
-					showInWebsite='1'
-					showInStore='1'
 				>
 					<label>Show Footer?</label>
 					<backend_model>Df\Config\Backend\Checkbox</backend_model>
@@ -155,12 +135,10 @@ https://github.com/mage2pro/core/tree/34f8c108/Config/etc/system_file.xsd#L102
 				</field>
 				<field
 					id='transparent'
+					showInDefault='1' showInStore='1' showInWebsite='1'
+					sortOrder='9'
 					translate='label'
 					type='Df\Framework\Form\Element\Checkbox'
-					sortOrder='9'
-					showInDefault='1'
-					showInWebsite='1'
-					showInStore='1'
 				>
 					<label>Transparent?</label>
 					<backend_model>Df\Config\Backend\Checkbox</backend_model>
