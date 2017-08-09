@@ -25,8 +25,7 @@ class Block extends _P {
 	 * @return string
 	 */
 	final protected function _toHtml() {
-		/** @var string $html */
-		$html = Settings::s()->html();
+		$html = Settings::s()->html(); /** @var string $html */
 		/**
 		 * 2015-11-09
 		 * Код виджета состоит из 2-х тегов: <a> и <script>, например:
@@ -37,27 +36,20 @@ class Block extends _P {
 		 * Чтобы этого избежать — обрамляем всё в <div>.
 		 */
 		$html = '<div>' . $html . '</div>';
-		/** @var \DOMDocument $dom */
-		$dom = new \DOMDocument;
+		$dom = new \DOMDocument; /** @var \DOMDocument $dom */
 		/** http://stackoverflow.com/a/22490902 */
 		$dom->loadHTML($html, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
-		/** @var \DOMElement $a */
-		$a = $dom->getElementsByTagName('a')->item(0);
+		$a = $dom->getElementsByTagName('a')->item(0); /** @var \DOMElement $a */
 		/** https://dev.twitter.com/web/embedded-timelines#dimensions */
 		foreach (['height', 'data-tweet-limit' => 'limit'] as $attribute => $configKey) {
-			/** @var int|string $attribute */
-			/** @var string $configKey */
-			/** @var int $value */
-			$value = Settings::s()->i($configKey);
-			if ($value) {
+			/** @var int|string $attribute */ /** @var string $configKey */ /** @var int $value */
+			if ($value = Settings::s()->i($configKey)) {
 				$a->setAttribute(is_numeric($attribute) ? $configKey : $attribute, $value);
 			}
 		}
-		/** @var string[] $chromeA */
-		$chromeA = [];
+		$chromeA = []; /** @var string[] $chromeA */
 		foreach (['borders', 'footer', 'header', 'scrollbar'] as $property) {
-			/** @var string $property */
-			if (!Settings::s()->b($property)) {
+			if (!Settings::s()->b($property)) {  /** @var string $property */
 				$chromeA[]= 'no' . $property;
 			}
 		}
@@ -73,8 +65,7 @@ class Block extends _P {
 		 * Выжно вызвать @uses df_trim(), потому что  @uses \DOMDocument::saveHTML()
 		 * зачем-то добавляет пробел и перенос строки в конце.
 		 */
-		/** @var string $result */
-		$result = df_trim($dom->saveHTML());
+		$result = df_trim($dom->saveHTML()); /** @var string $result */
 		$result = df_trim_text_left($result, '<div>');
 		$result = df_trim_text_right($result, '</div>');
 		return $result;
