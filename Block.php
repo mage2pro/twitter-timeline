@@ -63,7 +63,7 @@ class Block extends _P {
 		//data-chrome="nofooter noborders"
 		/**
 		 * 2015-11-09
-		 * Выжно вызвать @uses df_trim(), потому что  @uses \DOMDocument::saveHTML()
+		 * Важно вызвать @uses df_trim(), потому что  @uses \DOMDocument::saveHTML()
 		 * зачем-то добавляет пробел и перенос строки в конце.
 		 */
 		$result = df_trim($dom->saveHTML()); /** @var string $result */
