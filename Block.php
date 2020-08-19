@@ -1,7 +1,7 @@
 <?php
 namespace Dfe\TwitterTimeline;
 use Magento\Framework\View\Element\AbstractBlock as _P;
-// 2015-11-09
+# 2015-11-09
 /** @final Unable to use the PHP «final» keyword here because of the M2 code generation. */
 class Block extends _P {
 	/**
