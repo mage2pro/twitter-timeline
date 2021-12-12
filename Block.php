@@ -30,8 +30,26 @@ class Block extends _P {
 		/**
 		 * 2015-11-09
 		 * Код виджета состоит из 2-х тегов: <a> и <script>, например:
-		<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/mage2_pro" data-widget-id="663613566654787584">Tweets by @mage2_pro</a>
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		 * 		<a
+		 * 			class="twitter-timeline"
+		 * 			data-dnt="true"
+		 * 			href="https://twitter.com/mage2_pro" data-widget-id="663613566654787584"
+		 * 		>Tweets by @mage2_pro</a>
+		 * 		<script>
+		 * 			!function(d,s,id){
+		 * 				var
+		 * 					js,
+		 * 					fjs=d.getElementsByTagName(s)[0],
+		 * 					p=/^http:/.test(d.location)?'http':'https'
+		 * 				;
+		 * 				if(!d.getElementById(id)){
+		 * 					js=d.createElement(s);
+		 * 					js.id=id;
+		 * 					js.src=p+"://platform.twitter.com/widgets.js";
+		 * 					fjs.parentNode.insertBefore(js,fjs);
+		 * 				}
+		 * 			}(document,"script","twitter-wjs");
+		 * 		</script>
 		 * Так вот, @uses \DOMDocument почему-то парсит это код не совсем корректно:
 		 * после вызова @uses \DOMDocument::saveHTML() он помещает тег <script> внутрь тега <a>.
 		 * Чтобы этого избежать — обрамляем всё в <div>.
