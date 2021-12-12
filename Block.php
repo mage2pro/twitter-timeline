@@ -84,9 +84,6 @@ class Block extends _P {
 		 * Важно вызвать @uses df_trim(), потому что  @uses \DOMDocument::saveHTML()
 		 * зачем-то добавляет пробел и перенос строки в конце.
 		 */
-		$r = df_trim($dom->saveHTML()); /** @var string $r */
-		$r = df_trim_text_left($r, '<div>');
-		$r = df_trim_text_right($r, '</div>');
-		return $r;
+		return df_trim_text_left_right(df_trim($dom->saveHTML()), '<div>', '</div>');
 	}
 }
