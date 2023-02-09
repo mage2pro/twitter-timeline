@@ -8,8 +8,8 @@ final class Settings extends \Df\Config\Settings {
 	/** @return int */
 	function limit():int {return $this->i('limit');}
 
-	/** @return bool */
-	function transparent() {return $this->b('transparent');}
+	/** @used-by \Dfe\TwitterTimeline\Block::_toHtml() */
+	function transparent():bool {return $this->b('transparent');}
 
 	/**
 	 * @override
