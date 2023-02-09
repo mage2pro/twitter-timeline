@@ -2,11 +2,11 @@
 namespace Dfe\TwitterTimeline;
 /** @method static Settings s() */
 final class Settings extends \Df\Config\Settings {
-	/** @return string */
-	function html() {return $this->v('html');}
+	/** @used-by \Dfe\TwitterTimeline\Block::_toHtml() */
+	function html():string {return $this->v('html');}
 
 	/** @return int */
-	function limit() {return $this->i('limit');}
+	function limit():int {return $this->i('limit');}
 
 	/** @return bool */
 	function transparent() {return $this->b('transparent');}

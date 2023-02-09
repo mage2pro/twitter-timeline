@@ -23,9 +23,8 @@ class Block extends _P {
 	 *		}
 	 *		$html = $this->_afterToHtml($html);
 	 * https://github.com/magento/magento2/blob/2.2.0/lib/internal/Magento/Framework/View/Element/AbstractBlock.php#L643-L689
-	 * @return string
 	 */
-	final protected function _toHtml() {
+	final protected function _toHtml():string {
 		$html = Settings::s()->html(); /** @var string $html */
 		/**
 		 * 2015-11-09
@@ -81,8 +80,8 @@ class Block extends _P {
 		//data-chrome="nofooter noborders"
 		/**
 		 * 2015-11-09
-		 * Важно вызвать @uses df_trim(), потому что  @uses \DOMDocument::saveHTML()
-		 * зачем-то добавляет пробел и перенос строки в конце.
+		 * Важно вызвать @uses df_trim(),
+		 * потому что  @uses \DOMDocument::saveHTML() зачем-то добавляет пробел и перенос строки в конце.
 		 */
 		return df_trim_text_left_right(df_trim($dom->saveHTML()), '<div>', '</div>');
 	}
